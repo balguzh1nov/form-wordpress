@@ -1,0 +1,21 @@
+<div class="contact-form" style="max-width: 650px; margin: 0 auto; padding: 20px; background: #ffffff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+    <h2 style="text-align: left; margin-bottom: 20px; color: #0b0e9a;">Get In Touch</h2>
+    <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
+        <input type="hidden" name="action" value="submit_contact_form">
+        <div class="form-group" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
+            <input type="text" name="first_name" placeholder="First Name" required style="flex: 1; padding: 12px; border: none; border-radius: 5px; font-size: 16px; color: #1239ec; background-color: #e9eafe;" onfocus="this.style.color='#000';" onblur="this.style.color='#1239ec';">
+            <input type="text" name="last_name" placeholder="Last Name" required style="flex: 1; padding: 12px; border: none; border-radius: 5px; font-size: 16px; color: #1239ec; background-color: #e9eafe;" onfocus="this.style.color='#000';" onblur="this.style.color='#1239ec';">
+        </div>
+        <div class="form-group" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
+            <input type="email" name="email" placeholder="Email" required style="flex: 1; padding: 12px; border: none; border-radius: 5px; font-size: 16px; color: #1239ec; background-color: #e9eafe;">
+            <input type="tel" name="phone" placeholder="Phone" required style="flex: 1; padding: 12px; border: none; border-radius: 5px; font-size: 16px; color: #1239ec; background-color: #e9eafe;">
+        </div>
+        <div class="form-group" style="margin-bottom: 15px;">
+            <input type="text" name="address" placeholder="Address" style="width: calc(100% - 24px); padding: 12px; border: none; border-radius: 5px; font-size: 16px; color: #1239ec; background-color: #c3cefb;" onfocus="this.style.color='#000';" onblur="this.style.color='#1239ec';">
+        </div>
+        <div class="form-group" style="margin-bottom: 15px;">
+            <textarea name="message" placeholder="Type your message here" required style="width: calc(100% - 24px); padding: 12px; border: none; border-radius: 5px; font-size: 16px; height: 150px; resize: vertical; color: #1239ec; background-color: #a2aef6;" onfocus="this.style.color='#000';" onblur="this.style.color='#1239ec';"></textarea>
+        </div>
+        <button type="submit" style="display: block; margin: 0 auto; padding: 12px 35px; background-color: #1239ec; color: #fff; border: none; font-size: 16px; border-radius: 24px; cursor: pointer; transition: background-color 0.3s;">Submit</button>
+    </form>
+</div>
